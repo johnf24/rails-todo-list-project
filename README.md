@@ -8,7 +8,7 @@ Ruby 2.4.2, Rails 5.1.6
 
 ### Installation Instructions
 
-1.)	Clone rails-to-do-list-repository</br>
+1.)	Clone rails-to-do-list-project repository</br>
 2.)	Open terminal and navigate to repository</br>
 3.)	Run Rails Server with command ‘rails server’</br>
-4.)	In your browser navigate to Navigate to browser to http://localhost:3000/todo_lists
+4.)	In your browser navigate to http://localhost:3000/todo_lists
