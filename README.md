@@ -1,6 +1,6 @@
 ## Ruby To Do List App
 
-This is a To Do List app created entirely with Ruby and the Ruby on Rail's framework
+This is a To Do List app created entirely with Ruby and the Ruby on Rail's framework. It Creates, Reads, Updates and Deletes (C.R.U.D.) a PostgreSQL database and uses the Nginx Server.
 
 ### Software Requirements
 
