@@ -1,24 +1,14 @@
-# README
+## Ruby To Do List App
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a To Do List app created entirely with Ruby and the Ruby on Rail's framework. It Creates, Reads, Updates and Deletes (C.R.U.D.) a PostgreSQL database and uses the Nginx Server.
 
-Things you may want to cover:
+### Software Requirements
 
-* Ruby version
+Ruby 2.4.2, Rails 5.1.6
 
-* System dependencies
+### Installation Instructions
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+1.)	Clone rails-to-do-list-project repository</br>
+2.)	Open terminal and navigate to repository</br>
+3.)	Run Rails Server with command ‘rails server’</br>
+4.)	In your browser navigate to http://localhost:3000/todo_lists
