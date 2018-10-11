@@ -10,5 +10,5 @@
   <%= @todo_list.description %>
 </p>
 
-<%= link_to 'Edit', edit_todo_list_path(@todo_list) %> |
-<%= link_to 'Back', todo_lists_path %>
+<%= link_to '<button>Edit</button>'.html_safe, edit_todo_list_path(@todo_list) %> |
+<%= link_to '<button>Back</button>'.html_safe, todo_lists_path %>
