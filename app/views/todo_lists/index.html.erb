@@ -25,5 +25,37 @@
 <br>
 
 <div>
-<%= link_to 'New List', new_todo_list_path %>
+<!-- Open Modal -->
+<button id="myBtn">New List</button>
 </div>
+
+<!-- Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <p>Would you like to create a New List?</p>
+    <%= link_to '<button>Yes</button>'.html_safe, new_todo_list_path %>
+  </div>
+
+</div>
+
+<script>
+// Get modal
+var modal = document.getElementById('myModal');
+
+// Get the button that opens modal
+var btn = document.getElementById("myBtn");
+
+// Open modal onClick event 
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+
+// Close modal onClick event
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
