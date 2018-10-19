@@ -1,10 +1,20 @@
 class TodoListsController < ApplicationController
   before_action :set_todo_list, only: [:show, :edit, :update, :destroy]
+  helper_method :sort_column, :sort_direction
 
   # GET /todo_lists
   # GET /todo_lists.json
+  # Sort lists
   def index
-    @todo_lists = TodoList.all
+    @todo_lists = TodoList.order("#{sort_column}")
+  end
+
+  def sortable_columns
+    ["title"]
+  end
+
+  def sort_column
+    sortable_columns.include?(params[:column]) ? params[:column] : "title"
   end
 
   # GET /todo_lists/1
